@@ -13,6 +13,7 @@ entry-point = "./"
 
 # uncomment and adjust following if you are not using GitHub Actions
 #[env.production]
-kv-namespace = "3b584e7536254b00a71b5cc3f40c40bd"
+#kv-namespaces = [{binding="KV_STATUS_PAGE", id="xxxx", preview_id=""}]
 #zone_id="xxx"
 #route="xxx"
+compatibility_date = "2021-07-23"
