@@ -13,6 +13,6 @@ entry-point = "./"
 
 # uncomment and adjust following if you are not using GitHub Actions
 #[env.production]
-kv-namespace = [id="3b584e7536254b00a71b5cc3f40c40bd"]
+kv-namespace = "3b584e7536254b00a71b5cc3f40c40bd"
 #zone_id="xxx"
 #route="xxx"
