@@ -1,6 +1,6 @@
 settings:
   title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  url: 'https://cf-workers-status-page-production.lazbar.workers.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -17,16 +17,12 @@ settings:
 monitors:
   - id: softkeys # unique identifier
     name: Softkeys
-    description: 'You write code. They handle the rest.' # default=empty
     url: 'https://www.softkeys.co.uk' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
 
   - id: keyexperts
     name: Key Experts
-    description: 'Built for anything connected to the Internet.'
     url: 'https://www.key-experts.com'
     method: GET
     expectStatus: 200
@@ -37,3 +33,11 @@ monitors:
     url: 'https://www.oftkeys.com'
     method: GET
     expectStatus: 200
+    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: own
+    name: own
+    url: 'https://activation.market'
+    method: GET
+    expectStatus: 200
+    linkable: false # allows the title to be a link, default=true
