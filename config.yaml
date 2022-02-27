@@ -21,9 +21,9 @@ monitors:
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
 
-  - id: keyexperts
-    name: Key Experts
-    url: 'https://www.key-experts.com'
+  - id: keysdash
+    name: KeysDash
+    url: 'https://www.keysdash.com'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
@@ -35,8 +35,8 @@ monitors:
     expectStatus: 200
     followRedirect: false # should fetch follow redirects, default=false
 
-  - id: own
-    name: own
+  - id: activationmarket
+    name: Activation Market
     url: 'https://activation.market'
     method: GET
     expectStatus: 200
